@@ -4,33 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/mainbg"
     tools:context=".MainActivity">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
-    android:layout_marginTop="48dp"
-    android:orientation="vertical">
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:id="@+id/txtHappyMeal"
-        android:text="@string/HappyMeal"
-        android:textColor="@android:color/white"
-        android:textSize="45sp" />
-    
-</LinearLayout>
-    
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/txtHappyMeal"
+            android:text="@string/HappyMeal"
+            android:textColor="@android:color/white"
+            android:textSize="45sp"
+            android:fontFamily="@font/aargh"/>
+
+    </LinearLayout>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
         android:weightSum="2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
 
         <Button
             android:id="@+id/btnSignUp"
@@ -38,22 +40,22 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:text="Sign Up"
+            android:text="SignUp"
             android:textColor="@android:color/white"
-            android:background="@color/btnSignActive"
+            style="@style/InternalStyle2"
+            android:background="@drawable/button"
             />
 
         <Button
             android:id="@+id/btnSignIn"
-            android:text="Sign In"
+            android:text="SignIn"
             android:textColor="@android:color/white"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:background="@color/btnSignUp"
-
-
+            style="@style/InternalStyle2"
+            android:background="@drawable/button"
 
             />
 

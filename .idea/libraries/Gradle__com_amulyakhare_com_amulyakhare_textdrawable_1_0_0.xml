@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amulyakhare:com.amulyakhare.textdrawable-1.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/com.amulyakhare.textdrawable-1.0.0.aar/170cc05faa3361ada306f41c6db9fe22/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/com.amulyakhare.textdrawable-1.0.0.aar/170cc05faa3361ada306f41c6db9fe22/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amulyakhare/com.amulyakhare.textdrawable/1.0.0/ae554f20fdce7ccdead0a642d4572563b950134/com.amulyakhare.textdrawable-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#004d40</color>
-    <color name="colorPrimaryDark">#00251a</color>
-    <color name="colorAccent">#39796b</color>
+    <color name="colorPrimary">#882a08</color>
+    <color name="colorPrimaryDark">#713405</color>
+    <color name="colorAccent">#B3bb2525</color>
 
-    <color name="btnSignUp">#217338</color>
-    <color name="btnSignActive">#50c621</color>
+    <color name="btnSignUp">#882a08</color>
+    <color name="btnSignActive">#df2c03</color>
+    <color name="transparentColor">#ffffff</color>
 
     <color name="overlayBackground">#7f333639</color>
     <color name="overlayActionBar">#0e0d0e</color>

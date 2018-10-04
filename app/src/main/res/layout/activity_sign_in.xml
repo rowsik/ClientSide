@@ -1,71 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignIn">
+    tools:context=".MainActivity"
+    android:background="@drawable/main2bg">
 
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_centerInParent="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/edtPhone"
-            android:hint="Phone Number"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColorHint="@android:color/white"
-            android:text="984992968"
-            android:textColor="@android:color/white"
-            android:textSize="34sp"
-            app:met_baseColor="@android:color/white"
-            app:met_floatingLabel="highlight"
-            app:met_maxCharacters="11"
-            app:met_primaryColor="@android:color/white"
-            app:met_singleLineEllipsis="true"
-            android:inputType="phone"
+            android:text="Welcome"
+            android:layout_marginBottom="32dp"
+            style="@style/InternalStyle1"
             />
 
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/edtPassword"
-            android:hint="Password"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@android:color/white"
-            android:text="9849"
-            android:textColor="@android:color/white"
-            android:textSize="34sp"
-            app:met_baseColor="@android:color/white"
-            app:met_floatingLabel="highlight"
-            app:met_maxCharacters="11"
-            app:met_primaryColor="@android:color/white"
-            app:met_singleLineEllipsis="true"
-            android:inputType="textPassword"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext"
+            >
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/phone"
+                android:layout_margin="10dp"
+                android:tint="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_toRightOf="@id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="001"
+                android:inputType="phone"
+                android:hint="Phone Number"
+                style="@style/InternalStyle4" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext"
+            >
+            <ImageView
+                android:id="@+id/lock"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/lock"
+                android:layout_margin="10dp"
+                android:tint="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_toRightOf="@id/lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="001"
+                android:inputType="textPassword"
+                android:hint="Password"
+                style="@style/InternalStyle4"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="SignIn"
+            style="@style/InternalStyle2"
+            android:background="@drawable/button"
+            android:textAllCaps="false"
+            android:textStyle="bold"
             />
+
+
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnSignIn"
-        android:text="Sign In"
-        android:textColor="@android:color/white"
-        android:layout_width="match_parent"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_alignParentBottom="true"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:background="@color/btnSignUp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered By"
+            style="@style/InternalStyle3"/>
 
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logocom"
+            />
 
-
-        />
+    </LinearLayout>
 
 </RelativeLayout>
